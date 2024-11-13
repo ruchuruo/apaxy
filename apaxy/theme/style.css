@@ -25,6 +25,12 @@ html {
   font-size: 1em;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   line-height: 2em;
+
+  /* ↓落梦工作室↓ */
+  background: url(http://lmgzs.fun:444/files/img/102545981_p0.jpg)no-repeat center;
+  background-size: cover;
+  background-attachment: fixed;
+  /* ↑落梦工作室↑ */
 }
 @media (prefers-color-scheme: dark) {
   html {
@@ -79,19 +85,40 @@ a:hover {
   margin: 0 auto;
   padding-top: 20px;
   max-width: 80%;
+
+  /* ↓落梦工作室↓ */
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.5);
+  border-style: none;
+  border-radius: 30px;
+  /* ↑落梦工作室↑ */
 }
+/* ↓落梦工作室↓ */
+@media (prefers-color-scheme: dark) {
+  .wrapper {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+/* ↑落梦工作室↑ */
 
 /*------------------------------------*\
     Filter (search box)
 \*------------------------------------*/
 #filter {
-  background-color: rgba(0, 0, 0, 0.04);
+  /* ↓落梦工作室↓ */
+  /* background-color: rgba(0, 0, 0, 0.04); */
+  background-color: rgba(255, 255, 255, 0.5);
+  /* ↑落梦工作室↑ */
   float: right;
   font-size:.75em;
   padding: .5em;
   margin-bottom: .5em;
   border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: .25em;
+  /* ↓落梦工作室↓ */
+  /* border-radius: .25em; */
+  border-radius: 30px;
+  /* ↑落梦工作室↑ */
   width: 10em;
   transition: width 0.25s ease;
 }
@@ -133,12 +160,29 @@ table {
   }
 }
 
+/* ↓落梦工作室↓ */
+.even {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+@media (prefers-color-scheme: dark) {
+  .even {
+    background-color: rgba(60, 60, 60, 0.5);
+  }
+}
+/* ↑落梦工作室↑ */
+
 .odd {
-  background-color: rgb(244, 244, 244);
+  /* ↓落梦工作室↓ */
+  /* background-color: rgb(244, 244, 244); */
+  background-color: rgba(244, 244, 244, 0.5);
+  /* ↑落梦工作室↑ */
 }
 @media (prefers-color-scheme: dark) {
   .odd {
-    background-color: rgb(50, 50, 50);
+    /* ↓落梦工作室↓ */
+    /* background-color: rgb(50, 50, 50); */
+    background-color: rgba(50, 50, 50, 0.5);
+    /* ↑落梦工作室↑ */
   }
 }
 
@@ -220,7 +264,22 @@ tr.parent a[href^="/"] {
 .footer {
   text-align: center;
   font-size: .75em;
+
+  /* ↓落梦工作室↓ */
+  background-color: rgba(244, 244, 244, 0.5);
+  backdrop-filter: blur(30px);
+  box-shadow: 0px 0px 10px 1px rgba(255, 255, 255, 0.5);
+  border-style: none;
+  border-radius: 30px;
+  /* ↑落梦工作室↑ */
 }
+/* ↓落梦工作室↓ */
+@media (prefers-color-scheme: dark) {
+  .footer {
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+/* ↑落梦工作室↑ */
 
 /*------------------------------------*\
     Media query for small screens
@@ -235,6 +294,14 @@ tr.parent a[href^="/"] {
   .indexcollastmod { display: none; }
   .wrapper { max-width: 100%; }
 }
+/* ↓落梦工作室↓ */
+@media (min-width: 768px) {
+  .footer {
+    margin: auto;
+    max-width: 80%;
+  }
+}
+/* ↑落梦工作室↑ */
 
 /*------------------------------------*\
     Error pages
@@ -323,7 +390,10 @@ tr.parent a[href^="/"] {
 }
 
 .breadcrumb li {
-  color: rgb(154, 154, 154);
+  /* ↓落梦工作室↓ */
+  /* color: rgb(154, 154, 154); */
+  color: rgb(255, 255, 255);
+  /* ↑落梦工作室↑ */
   display: inline-block;
   line-height: 10px;
   margin: 0 9px 20px -10px;
